@@ -1,0 +1,46 @@
+<script>
+ const COTIZACION_COMPRA = 1235;
+ const COTIZACION_VENTA = 1200;
+
+ let compra = () => {
+  let cantidad = Number(prompt("Cuanto?"));
+  let total = COTIZACION_COMPRA * cantidad;
+  alert("COSTO: " + total);
+ };
+
+ let venta = () => {
+  let cantidad = Number(prompt("Cuanto?"));
+  let total = COTIZACION_VENTA * cantidad;
+  alert("COSTO: " + total);
+ };
+
+ let operacion = (op) => {
+  console.log("operacion", op);
+  switch (op) {
+   case 1:
+    compra();
+    break;
+   case 2:
+    venta();
+    break;
+   default:
+    principal();
+  }
+ };
+
+ function llamarAction() {
+  let pregunta = prompt(`OPERACIÓN:
+
+   1 - COMPRA DÓLARES
+   2 - VENTA DOLARES`);
+
+  operacion(Number(pregunta));
+ }
+
+ function principal() {
+  llamarAction();
+  console.log("Arrancamos!");
+ }
+
+ principal();
+</script>

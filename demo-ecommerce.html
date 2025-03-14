@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+ </head>
+ <body>
+  <h1>E COMMERCE GUACHI GUAU</h1>
+  <script>
+   const PRECIO_PAPITAS = 4000;
+   const PRECIO_COCA_COLA = 4100;
+
+   function calcular(que, cuanto) {
+    switch (que) {
+     case "1":
+      alert("cocas: " + PRECIO_COCA_COLA * Number(cuanto));
+      break;
+     case "2":
+      alert("papas: " + PRECIO_PAPITAS * Number(cuanto));
+      break;
+     default:
+      principal();
+    }
+   }
+
+   function queQuiereYcuanto() {
+    let que = prompt(`OPERACIÓN:
+
+    1 - COCA C
+    2 - PAPITAS`);
+
+    if (que != "1" && que != "2") {
+     principal();
+    }
+
+    let cuanto = prompt(`Cuanto?`);
+
+    calcular(que, cuanto);
+   }
+
+   function principal() {
+    queQuiereYcuanto();
+   }
+
+   principal();
+  </script>
+ </body>
+</html>
