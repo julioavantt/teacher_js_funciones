@@ -81,8 +81,10 @@ Permite calcular el precio total al comprar **Coca-Cola** o **papitas**, dependi
 Cuando lo abrís en el navegador, aparece un título y, en segundo plano, se ejecuta un código JavaScript que:
 
 1. Te pregunta qué querés comprar:
+
    - `1` para Coca-Cola
    - `2` para Papitas
+
 2. Luego te pregunta **cuántas unidades** querés.
 3. Finalmente, te muestra el **precio total** que tenés que pagar según el producto y la cantidad.
 
@@ -113,17 +115,10 @@ Muestra el total con un `alert`.
 Es el punto de inicio del programa.  
 Llama a `queQuiereYcuanto()`.
 
-## ▶️ Cómo usarlo
-
-1. Copiá el contenido en un archivo llamado `index.html`.
-2. Abrilo con cualquier navegador.
-3. Aparecerá el título **"E COMMERCE"** y se ejecutará el programa en segundo plano con ventanas emergentes (`prompt` y `alert`).
-
 ## 🧑‍💻 Ideal para practicar
 
-Este ejemplo es excelente para principiantes que quieren practicar:
+Este ejemplo es excelente para practicar:
 
-- Estructura básica de un archivo HTML.
 - Uso de `prompt()` y `alert()`.
 - Condicionales `switch`.
 - Lógica básica de e-commerce: elegir producto + cantidad = total.
