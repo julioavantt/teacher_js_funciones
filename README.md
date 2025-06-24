@@ -69,11 +69,9 @@ El código está dividido en funciones:
 
 ### `llamarAction()`
 
-- Muestra el menú inicial con `prompt`:
+- Muestra el menú inicial con `prompt`: Consulta al usuario siquiere vender o comprar y luego llama a operaciones con el valor.
 
 # Ejercicio 2: Simulador de E-Commerce 🛒
-
-# 🛒 E-Commerce Guachi Guau
 
 Este proyecto es una simulación muy simple de un e-commerce básico hecha con HTML y JavaScript puro.  
 Permite calcular el precio total al comprar **Coca-Cola** o **papitas**, dependiendo de la cantidad que elija el usuario.
